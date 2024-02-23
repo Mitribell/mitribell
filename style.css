@@ -36,9 +36,14 @@ a {
   transition: color .5s;
 }
 
-a:hover {
+a:hover, a.selected {
   color: #999999;
   text-decoration: none;  
+}
+
+img {
+  width: 100%;    
+  object-fit: contain;
 }
 
 section {
@@ -47,15 +52,45 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 32px 32px;
+  grid-auto-flow: dense;
 }
 
 section h1 {
   grid-column: 2 / span 10;
 }
 
-section.project img {  
-  grid-column: 2 / span 6;
+section.project div.artwork {   
+  grid-column: 1 / span 8;
 }
+
+section.project div.description {
+  grid-column: 9 / span 4;
+}
+
+section.project-alt div.artwork {   
+  grid-column: 5 / span 8;
+}
+  
+section.project-alt div.description {
+  grid-column: 1 / span 4;
+}
+
+section.about div.portrait {
+  grid-column: 1 / span 6;
+}
+
+section.about div.cv {
+  grid-column: 7 / span 6;
+}
+
+section.contact div.form {
+  grid-column: 4 / span 6;
+}
+
+section.project img {
+    max-height: 640px;
+}
+
 
 footer a {
   margin: 0 0 0 0;
