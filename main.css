@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+  font-family: JetBrains Mono, Helvetica;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #000000;
+  color: #ffffff;
+  margin: 80px auto 40px auto;
+  width: 1120px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+h1, nav, footer {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 0 0;  
+}
+
+a {
+  color: #ffffff;
+  margin: 0 0 0 32px;
+  text-decoration: none;  
+  transition: color .5s;
+}
+
+a:hover {
+  color: #999999;
+  text-decoration: none;  
+}
+
+section {
+  margin: 80px 0 80px 0;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px 32px;
+}
+
+section h1 {
+  grid-column: 2 / span 10;
+}
+
+section.project img {  
+  grid-column: 2 / span 6;
+}
+
+footer a {
+  margin: 0 0 0 0;
+}
