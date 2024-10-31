@@ -1,0 +1,21 @@
+html,
+body {
+  margin: 0 auto;  
+  padding-top: 10px;
+  display: flex;
+}
+
+#left {
+  width: 400px;
+  height: 566px;
+  margin-right: 10px;
+}
+
+#right {
+  width: 400px;
+  height: 566px;
+  background-color: black;
+  margin-left: 10px;
+}
+
+
